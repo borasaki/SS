@@ -31,8 +31,8 @@ jobs:
       - name: Web Build
         run: |
           mkdir -v -p build/web
-          cd $PROJECT_PATH
-          godot --headless -v --export-release "Web" build/web/index.html
+          # cd $PROJECT_PATH
+          godot --headless -v --export-release "Web" project
       - name: Install rsync 📚
         run: |
           apt-get update && apt-get install -y rsync
