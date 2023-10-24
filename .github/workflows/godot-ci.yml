@@ -20,8 +20,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           lfs: true
-      - name: WhatDoWeHave 
-          run: ls /root/.local/share/godot/templates/{GODOT_VERSION}.stable/
       - name: Setup
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates
