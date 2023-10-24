@@ -1,5 +1,5 @@
 # Godot auto generated files
-.godot/
+# .godot/
 *.gen.*
 **/.import/
 
@@ -82,7 +82,7 @@ logs/
 [Dd]ebugPublic/
 [Rr]elease/
 x64/
-#build/
+build/
 bld/
 [Bb]in/
 [Oo]bj/
