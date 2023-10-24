@@ -3,12 +3,15 @@ on: push
 
 env:
   GODOT_VERSION: 4.1.2
-  # EXPORT_NAME: project/build/web
+  EXPORT_NAME: build/web
   PROJECT_PATH: project
   
 jobs:
   export-web:
     name: Web Export
+    environment:
+      name: development
+      url: https://github.com/borasaki/SS/settings/secrets
     runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.1.2
