@@ -30,7 +30,6 @@ jobs:
       - name: Web Build
         run: |
           mkdir -v -p build/web
-          cd $PROJECT_PATH
           godot --headless -v --export-release "Web" build/web/index.html
       - name: Install rsync 📚
         run: |
