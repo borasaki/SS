@@ -14,7 +14,7 @@ jobs:
       image: barichello/godot-ci:4.1.2
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           lfs: true
       - name: Setup
@@ -25,7 +25,7 @@ jobs:
         run: |
           mkdir -v -p build/web
           cd $PROJECT_PATH
-          godot --headless -v --export-release "HTML5" ../build/web/index.html
+          godot --headless -v --export-release "HTML5" "../build/web/index.html"
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
