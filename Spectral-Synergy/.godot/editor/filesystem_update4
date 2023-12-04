@@ -1,0 +1,10 @@
+res://Game Scenes/Menu.tscn
+res://Assets/player_2d.tres
+res://Player Scenes/player_3d.tscn
+res://Game Scenes/world.tscn
+res://Game Scenes/Main.tscn
+res://Node Scripts/MultiplayerController.gd
+res://Player Scenes/UI.gd
+res://Node Scripts/Client.gd
+res://Node Scripts/GameManager.gd
+res://SceneManager-General.gd

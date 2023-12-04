@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b24en581gkree"]
+
+[ext_resource type="PackedScene" uid="uid://x6uk6qiiy1be" path="res://Game Scenes/Menu.tscn" id="1_tfaps"]
+
+[node name="Main" type="Node"]
+
+[node name="Lobby" type="Node" parent="."]
+
+[node name="Menu" parent="." node_paths=PackedStringArray("lobby") instance=ExtResource("1_tfaps")]
+lobby = NodePath("../Lobby")

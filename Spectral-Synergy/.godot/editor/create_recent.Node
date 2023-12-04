@@ -1,0 +1,15 @@
+Control
+MultiplayerSpawner
+Node
+RichTextLabel
+TextEdit
+LineEdit
+Button
+Panel
+PanelContainer
+CanvasLayer
+MultiplayerSynchronizer
+DirectionalLight3D
+StaticBody3D
+CollisionShape3D
+AnimatedSprite3D

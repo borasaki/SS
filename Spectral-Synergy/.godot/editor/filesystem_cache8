@@ -1,0 +1,41 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1701727488
+export_presets.cfg::TextFile::-1::1701727285::0::1::::<><>::
+icon.svg::CompressedTexture2D::3286734932446439049::1697670558::1697670563::1::::<><>::
+README.md::TextFile::-1::1697734824::0::1::::<><>::
+SceneManager-General.gd::GDScript::-1::1701725356::0::1::::<>Node3D<>::
+::res://addons/::1701726303
+::res://addons/coi_serviceworker/::1701726303
+coi_export_plugin.gd::GDScript::-1::1701726303::0::1::::<>EditorExportPlugin<>::
+coi_plugin.gd::GDScript::-1::1701726303::0::1::::<>EditorPlugin<>::
+plugin.cfg::TextFile::-1::1701726303::0::1::::<><>::
+::res://Assets/::1701722632
+player_2d.tres::SpriteFrames::2414950910159292627::1701722632::0::1::::<><>::uid://cliuo4a1rvoix::::res://Assets/y2j24kxf.bmp
+y2j24kxf.bmp::CompressedTexture2D::5562674534789069143::1697670602::1697670853::1::::<><>::
+::res://Assets/Pixel Art Top Down - Basic/::1697670632
+::res://Assets/Pixel Art Top Down - Basic/Texture/::1697670632
+TX Plant.png::CompressedTexture2D::930909487354534923::1697670632::1697670632::1::::<><>::
+TX Player.png::CompressedTexture2D::3140848002438403698::1697670632::1697670632::1::::<><>::
+TX Props.png::CompressedTexture2D::5789360598426287525::1697670632::1697670632::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::5774720099858652905::1697670632::1697670632::1::::<><>::
+TX Shadow.png::CompressedTexture2D::3059122779257215386::1697670632::1697670632::1::::<><>::
+TX Struct.png::CompressedTexture2D::9161323841734472247::1697670632::1697670632::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::3024013496234463163::1697670632::1697670632::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::1358248919548768855::1697670632::1697670632::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::8872827179167671715::1697670632::1697670632::1::::<><>::
+::res://Game Scenes/::1701727434
+control.tscn::PackedScene::4973216959050524345::1697735171::0::1::::<><>::res://Node Scripts/Client.gd<>res://Node Scripts/Server.gd
+Main.tscn::PackedScene::4341654127948340352::1701725381::0::1::::<><>::uid://x6uk6qiiy1be::::res://Game Scenes/Menu.tscn
+Menu.tscn::PackedScene::1679572965160848718::1701727434::0::1::::<><>::res://Node Scripts/MultiplayerController.gd<>uid://bbjhnqqi5yamt::::res://Player Scenes/player_3d.tscn<>res://Game Scenes/ServerBrowser.gd
+ServerBrowser.gd::GDScript::-1::1701725606::0::1::::<>Control<>::
+tree.tscn::PackedScene::6049074742956707169::1697676013::0::1::::<><>::uid://ni67cnp2d1q2::::res://Assets/Pixel Art Top Down - Basic/Texture/TX Plant.png
+world.tscn::PackedScene::2989012015918726334::1701725381::0::1::::<><>::res://SceneManager-General.gd<>uid://bbjhnqqi5yamt::::res://Player Scenes/player_3d.tscn<>uid://bjc4cb5xakujj::::res://Assets/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png<>uid://csghm3c4sgigf::::res://Game Scenes/tree.tscn
+::res://Node Scripts/::1701727366
+GameManager.gd::GDScript::-1::1701723746::0::1::::<>Node<>::
+Lobby.gd::GDScript::-1::1697735087::0::1::::Lobby<>RefCounted<>::
+MultiplayerController.gd::GDScript::-1::1701724905::0::1::::<>Control<>::
+player_3d.gd::GDScript::-1::1698201906::0::1::::<>CharacterBody3D<>::
+::res://Player Scenes/::1701725381
+player_2d.tscn::PackedScene::7953958735399534888::1697735099::0::1::::<><>::uid://ban25hj7pw804::::res://Assets/player_2d.tres
+player_3d.tscn::PackedScene::2475638026882790475::1701725381::0::1::::<><>::res://Node Scripts/player_3d.gd<>uid://ban25hj7pw804::::res://Assets/player_2d.tres<>res://Player Scenes/UI.gd
+UI.gd::GDScript::-1::1701723232::0::1::::<>CanvasLayer<>::

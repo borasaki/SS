@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://csghm3c4sgigf"]
+
+[ext_resource type="Texture2D" uid="uid://ni67cnp2d1q2" path="res://Assets/Pixel Art Top Down - Basic/Texture/TX Plant.png" id="1_d1utg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vev0b"]
+atlas = ExtResource("1_d1utg")
+region = Rect2(0, 0, 159, 170)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cqjog"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vev0b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_owjsw"]
+height = 1.25596
+radius = 0.0588556
+
+[node name="Tree" type="AnimatedSprite3D"]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_cqjog")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0496814, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("CylinderShape3D_owjsw")

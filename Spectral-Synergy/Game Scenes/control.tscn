@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc4cflfx4u8e4"]
+
+[ext_resource type="Script" path="res://Node Scripts/Client.gd" id="1_2eugo"]
+[ext_resource type="Script" path="res://Node Scripts/Server.gd" id="2_w4dp5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Client" type="Node" parent="."]
+script = ExtResource("1_2eugo")
+
+[node name="LineEdit" type="LineEdit" parent="Client"]
+offset_left = 152.0
+offset_top = 88.0
+offset_right = 304.0
+offset_bottom = 119.0
+
+[node name="Server" type="Node" parent="."]
+script = ExtResource("2_w4dp5")
+
+[node name="Start Client" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Start Client"
+
+[node name="Start Server" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Start Server
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_top = 44.0
+offset_right = 139.0
+offset_bottom = 75.0
+text = "Send Test Packet"
+
+[node name="JoinLobby" type="Button" parent="."]
+layout_mode = 0
+offset_top = 88.0
+offset_right = 139.0
+offset_bottom = 119.0
+text = "Join Lobby"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -139.0
+offset_top = 44.0
+offset_bottom = 75.0
+grow_horizontal = 0
+text = "Send Test Packet"
+
+[connection signal="button_down" from="Start Client" to="Client" method="_on_start_client_button_down"]
+[connection signal="button_down" from="Start Server" to="Server" method="_on_start_server_button_down"]
+[connection signal="button_down" from="Button" to="Client" method="_on_button_button_down"]
+[connection signal="button_down" from="JoinLobby" to="Client" method="_on_join_lobby_button_down"]
+[connection signal="button_down" from="Button2" to="Server" method="_on_button_2_button_down"]

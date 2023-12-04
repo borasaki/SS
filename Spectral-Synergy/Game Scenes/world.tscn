@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://bit5udouuj7m5"]
+
+[ext_resource type="Script" path="res://SceneManager-General.gd" id="1_ax8km"]
+[ext_resource type="PackedScene" uid="uid://bbjhnqqi5yamt" path="res://Player Scenes/player_3d.tscn" id="2_0nmbu"]
+[ext_resource type="Texture2D" uid="uid://bjc4cb5xakujj" path="res://Assets/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png" id="3_eqya4"]
+[ext_resource type="PackedScene" uid="uid://csghm3c4sgigf" path="res://Game Scenes/tree.tscn" id="4_m3lwf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66bis"]
+albedo_texture = ExtResource("3_eqya4")
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_ax8km")
+playerScene = ExtResource("2_0nmbu")
+
+[node name="Setting" type="Node3D" parent="."]
+
+[node name="Ground" type="CSGBox3D" parent="Setting"]
+material_override = SubResource("StandardMaterial3D_66bis")
+use_collision = true
+size = Vector3(12, 0.005, 12)
+
+[node name="Tree" parent="Setting" instance=ExtResource("4_m3lwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82246, 0.657813, 1.75627)
+
+[node name="Tree2" parent="Setting" instance=ExtResource("4_m3lwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.64162, 0.657813, 0.446882)
+
+[node name="Tree3" parent="Setting" instance=ExtResource("4_m3lwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.540869, 0.657813, -0.827482)
+
+[node name="Tree4" parent="Setting" instance=ExtResource("4_m3lwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6122, 0.657813, -2.73457)
+
+[node name="Spawnpoints" type="Node3D" parent="."]
+
+[node name="0" type="Node3D" parent="Spawnpoints" groups=["PlayerSpawn"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00885034, 0.53511, -0.0579824)
+
+[node name="1" type="Node3D" parent="Spawnpoints" groups=["PlayerSpawn"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.80922, 0.53511, 2.98061)
+
+[node name="2" type="Node3D" parent="Spawnpoints" groups=["PlayerSpawn"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.53528, 0.53511, -3.07433)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.31134e-07, 1, 0, -1, 1.31134e-07, 0, 2.61796, 0)

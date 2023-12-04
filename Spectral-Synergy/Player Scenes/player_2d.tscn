@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlk7skiypa1vg"]
+
+[ext_resource type="SpriteFrames" uid="uid://ban25hj7pw804" path="res://Assets/player_2d.tres" id="1_wv77q"]
+
+[node name="player2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = ExtResource("1_wv77q")
+animation = &"Idle"
