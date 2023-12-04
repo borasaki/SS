@@ -9,9 +9,9 @@ env:
 jobs:
   export-web:
     name: Web Export
-    # environment:
-      # name: development
-      # url: https://github.com/borasaki/SS/settings/secrets
+    environment:
+      name: development
+      url: https://github.com/borasaki/SS/settings/secrets
     runs-on: ubuntu-latest
     container:
       image: barichello/godot-ci:4.1.3
